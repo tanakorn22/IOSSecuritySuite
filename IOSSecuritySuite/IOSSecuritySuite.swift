@@ -167,7 +167,7 @@ public class EZYKsgUMbWAhd4RGZnT48ZQlwdhT1Nby {
 
 #if arch(arm64)
 @available(iOSApplicationExtension, unavailable)
-public extension IOSSecuritySuite {
+public extension EZYKsgUMbWAhd4RGZnT48ZQlwdhT1Nby {
     /**
     This type method is used to determine if `function_address` has been hooked by `MSHook`
     
@@ -269,7 +269,7 @@ public extension IOSSecuritySuite {
      - Returns: A hash value of the executable file.
      */
     static func getMachOFileHashValue(_ target: IntegrityCheckerImageTarget = .default) -> String? {
-        return IntegrityChecker.getMachOFileHashValue(target)
+        return SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5.getMachOFileHashValue(target)
     }
     
     /**
@@ -288,7 +288,7 @@ public extension IOSSecuritySuite {
      - Returns: An Array with all loaded dylib names
     */
     static func findLoadedDylibs(_ target: IntegrityCheckerImageTarget = .default) -> [String]? {
-        return IntegrityChecker.findLoadedDylibs(target)
+        return SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5.findLoadedDylibs(target)
     }
     /**
     This type method is used to determine if there are any breakpoints at the function
@@ -307,11 +307,11 @@ public extension IOSSecuritySuite {
     ```
     */
     static func hasBreakpointAt(_ functionAddr: UnsafeRawPointer, functionSize: vm_size_t?) -> Bool {
-        return DebuggerChecker.hasBreakpointAt(functionAddr, functionSize: functionSize)
+        return qUr1OrxYGKfoHa2913xG6onWJhItRxZp.hasBreakpointAt(functionAddr, functionSize: functionSize)
     }
     
     static func hasWatchpoint() -> Bool {
-        return DebuggerChecker.hasWatchpoint()
+        return qUr1OrxYGKfoHa2913xG6onWJhItRxZp.hasWatchpoint()
     }
  }
  #endif

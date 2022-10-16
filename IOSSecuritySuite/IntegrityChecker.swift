@@ -127,7 +127,7 @@ public enum IntegrityCheckerImageTarget {
     case custom(String)
 }
 
-extension IntegrityChecker {
+extension SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5 {
     
     // Get hash value of Mach-O "__TEXT.__text" data with a specified image target
     static func getMachOFileHashValue(_ target: IntegrityCheckerImageTarget = .default) -> String? {
@@ -315,7 +315,7 @@ private class MachOParse {
         var hash = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
         _ = CC_SHA256(startAddr, CC_LONG(size), &hash)
         
-        return Data(hash).hexEncodedString()
+        return Data(hash).p1NgDFtY6J8FX1YyTD0IpPaiXHVd7Ksw()
     }
 }
 
