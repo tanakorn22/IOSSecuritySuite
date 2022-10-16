@@ -9,10 +9,10 @@
 
 import Foundation
 
-internal class DebuggerChecker {
+internal class qUr1OrxYGKfoHa2913xG6onWJhItRxZp {
 
     // https://developer.apple.com/library/archive/qa/qa1361/_index.html
-    static func amIDebugged() -> Bool {
+    static func L5bY39vYL8YDoseVXfJwNSfZP0ALz9p9() -> Bool {
 
         var kinfo = kinfo_proc()
         var mib: [Int32] = [CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()]
@@ -26,7 +26,7 @@ internal class DebuggerChecker {
         return (kinfo.kp_proc.p_flag & P_TRACED) != 0
     }
 
-    static func denyDebugger() {
+    static func qB8ttQtAnyFjeW2M3mBmimbHXTeAvSRt() {
 
         // bind ptrace()
         let pointerToPtrace = UnsafeMutableRawPointer(bitPattern: -2)

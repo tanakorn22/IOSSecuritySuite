@@ -16,7 +16,7 @@ class RuntimeClass {
    }
 }
 
-//Test watchpoint
+//Test watchpoint debug
 func testWatchpoint() -> Bool{
     var ptr = malloc(9)
     var count = 3

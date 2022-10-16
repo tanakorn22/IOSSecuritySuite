@@ -10,15 +10,15 @@
 import Foundation
 import MachO
 
-internal class RuntimeHookChecker {
+internal class kMp2HGuHpg24JU1laRQnmPU2MVFi8Us5 {
 
-    static private let swiftOnceDenyFishHooK: Void = {
+    static private let Awx9JrFAAKcNzwyN4PRzIAJ8NpxzeTLm: Void = {
         #if arch(arm64)
         FishHookChecker.denyFishHook("dladdr")
         #endif
     }()
 
-    static func amIRuntimeHook(dyldWhiteList: [String], detectionClass: AnyClass, selector: Selector, isClassMethod: Bool) -> Bool {
+    static func rW4zRjzz8geDCTnptGFr97Xpb6tDWe1m(dyldWhiteList: [String], detectionClass: AnyClass, selector: Selector, isClassMethod: Bool) -> Bool {
         var method: Method?
         if isClassMethod {
             method = class_getClassMethod(detectionClass, selector)
@@ -34,7 +34,7 @@ internal class RuntimeHookChecker {
         let imp = method_getImplementation(method!)
         var info = Dl_info()
 
-        _ = swiftOnceDenyFishHooK
+        _ = Awx9JrFAAKcNzwyN4PRzIAJ8NpxzeTLm
 
         // dladdr will look through vm range of allImages for vm range of an Image that contains pointer of method and return info of the Image
         if dladdr(UnsafeRawPointer(imp), &info) != 1 {

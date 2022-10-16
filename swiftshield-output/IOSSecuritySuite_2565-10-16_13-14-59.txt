@@ -1,0 +1,63 @@
+//
+// SwiftShield Conversion Map
+// IOSSecuritySuite
+// Deobfuscate crash logs (or any text file) by running:
+// swiftshield deobfuscate
+//
+
+DebuggerChecker ===> qUr1OrxYGKfoHa2913xG6onWJhItRxZp
+EmulatorChecker ===> H6BplQl6Px9F84QXr5aMC214RPdHxMMs
+Explainable ===> wdeGY67Kj6spdM1ZLmwzewzNmUor025g
+FileIntegrityCheck ===> aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST
+IOSSecuritySuite ===> EZYKsgUMbWAhd4RGZnT48ZQlwdhT1Nby
+IntegrityChecker ===> SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5
+JailbreakCheck ===> w3oQnLBfdulnIkE7WoSLLAN8c5LWeJF0
+JailbreakChecker ===> MzL0sbBM5Z91CMMXfdhuyHGWvNtLQSAj
+JailbreakStatus ===> xyAnuVi8iu2SFVJzR4AESo57QBPCHbAT
+ProxyChecker ===> EC1tAVkmzrJGMky5f2rnfkk3iGIrmoPk
+ReverseEngineeringToolsChecker ===> UeAhMwny7omNwI4VpcJgTqHK1URYge4M
+RuntimeHookChecker ===> kMp2HGuHpg24JU1laRQnmPU2MVFi8Us5
+amIDebugged ===> L5bY39vYL8YDoseVXfJwNSfZP0ALz9p9
+amIJailbroken ===> bqN0v8TToc6rPgDSsrERExHnF2Ejy5nN
+amIJailbrokenWithFailMessage ===> MRWVO4bUkk1ce88PxUZnKBZ2XFsw2L0P
+amIJailbrokenWithFailedChecks ===> K937GVF2Rqjcy9XdcFFVqY4k6GHANOzv
+amIProxied ===> JyRTmtCrfic2RSw75656p5A6t48Gfm2j
+amIReverseEngineered ===> HgFCc06ANygRYR1PvaXKsk3tEnLVElbn
+amIRunInEmulator ===> kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8
+amIRuntimeHook ===> rW4zRjzz8geDCTnptGFr97Xpb6tDWe1m
+amIRuntimeHooked ===> ZjjEdGihhVQguxQrvzTJaVlK90iGiooR
+amITampered ===> M2OBdlk4fK1i91SiAtLLcwvvzGM4ZX2X
+bundleID ===> ZguFsHQVIkiLwpTSU6m1J7vGfql4WmyV
+canOpenLocalConnection ===> xj47AYnQcNRnYf3qCAIoEwlLopEY98tw
+canOpenUrlFromList ===> E31B5wESkqmoBUXddGO8TGMflvZgYYFB
+checkBundleID ===> plxybUaZyERjKAUI0cxCLpx7JJEwskp1
+checkCompile ===> vgsq47G37vfnymjwPlDtN0NFASMj0xq7
+checkDYLD ===> OThGT3qQBZFjsCltEl46n2h2EpjcD8cy
+checkExistenceOfSuspiciousFiles ===> XkbSIPRH86i7DbxIfDo9HWHYdotcT4GX
+checkFork ===> ve4sbxcUwD7CyaP8VWhYmajJuaf5OF02
+checkMachO ===> TDNg3h9GDeWySiKM8leMc1pt0oIYGPmH
+checkMobileProvision ===> ZWbVrbOg5wwgkVwBo52k2Pmc08rgEumh
+checkOpenedPorts ===> MCUutOS8F3r93Gz3JgLSpKewYEwJVfCD
+checkPSelectFlag ===> y3jbEWplf4MxR1oOGOsS6jW7qD9HOr8k
+checkRestrictedDirectoriesWriteable ===> SJrVxoGeLdEZW7ReDuLLubWM9aGoGSJB
+checkRuntime ===> bB8fjErVwBf26ZidMMJ01z08Zohk4Geb
+checkSuspiciousFilesCanBeOpened ===> ZSULnJpiMIhsTwPqX8fdyGsxbdxOaV49
+checkSymbolicLinks ===> FLXtBAf69k1Oz0a8kWeTTdbAI7XxesA4
+checkURLSchemes ===> yzXDR0BUYcpYTpwyEmUeqMGHLtjnIXlb
+denyDebugger ===> qB8ttQtAnyFjeW2M3mBmimbHXTeAvSRt
+description ===> PjJTTAu9l0PHKxqyer571ThdJmIRw9w5
+dyld ===> usYXhyWmThAdfsHtHTMQLaL5M2VeNaHN
+existenceOfSuspiciousFiles ===> apMfvrvcnx2p5PRR80uhhWjsonj49eGJ
+failMessage ===> vIGEurhaXoc2rRnnxT5v2FQmgSjGyiAP
+failedChecks ===> zFFnoVG6EgGghNSZJTj2apZ6SbjWsbfP
+fork ===> AxHzr1lPQWqdJGZc18UHGgePK6hONHf9
+hexEncodedString ===> p1NgDFtY6J8FX1YyTD0IpPaiXHVd7Ksw
+machO ===> OV4osg9RhdA9QqTsWzWpIynG9090kVbI
+mobileProvision ===> EBPMl8uX0E0vPAdTWOiJ4GrVVK9U1tt5
+passed ===> STpqb4NhI0QRAIMjlUx42DLwiderAIWI
+performChecks ===> mwpyQSW7uVNDjJcpAvuiKr1OnhFAzzaf
+restrictedDirectoriesWriteable ===> Ul5ianXsE7Hn2Hw8n1bqx9vwz05rzoTB
+suspiciousFilesCanBeOpened ===> OrG9wB2fvWKZMERmG9QrJ3NeHxRcvWYh
+swiftOnceDenyFishHooK ===> Awx9JrFAAKcNzwyN4PRzIAJ8NpxzeTLm
+symbolicLinks ===> obZO2lGEcmqc6YParfTFIlR5I5yDtnOZ
+urlSchemes ===> YWMruGvoZlHWaPYNEZaHruwfEjfUIqOj

@@ -334,6 +334,7 @@
 		706B0E36226F445F0059AEA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
@@ -355,6 +356,7 @@
 		706B0E37226F445F0059AEA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
@@ -376,6 +378,7 @@
 		70B0BBC2226F3A4D000CFB39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -440,6 +443,7 @@
 		70B0BBC3226F3A4D000CFB39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -498,6 +502,7 @@
 		70B0BBC5226F3A4D000CFB39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -529,6 +534,7 @@
 		70B0BBC6226F3A4D000CFB39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+SWIFTSHIELDED = true;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
