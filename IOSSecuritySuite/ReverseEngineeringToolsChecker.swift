@@ -9,13 +9,13 @@
 import Foundation
 import MachO // dyld
 
-internal class ReverseEngineeringToolsChecker {
+internal class UeAhMwny7omNwI4VpcJgTqHK1URYge4M {
 
-    static func amIReverseEngineered() -> Bool {
-        return (checkDYLD() || checkExistenceOfSuspiciousFiles() || checkOpenedPorts() || checkPSelectFlag())
+    static func HgFCc06ANygRYR1PvaXKsk3tEnLVElbn() -> Bool {
+        return (OThGT3qQBZFjsCltEl46n2h2EpjcD8cy() || XkbSIPRH86i7DbxIfDo9HWHYdotcT4GX() || MCUutOS8F3r93Gz3JgLSpKewYEwJVfCD() || y3jbEWplf4MxR1oOGOsS6jW7qD9HOr8k())
     }
 
-    private static func checkDYLD() -> Bool {
+    private static func OThGT3qQBZFjsCltEl46n2h2EpjcD8cy() -> Bool {
 
         let suspiciousLibraries = [
             "FridaGadget",
@@ -39,7 +39,7 @@ internal class ReverseEngineeringToolsChecker {
         return false
     }
 
-    private static func checkExistenceOfSuspiciousFiles() -> Bool {
+    private static func XkbSIPRH86i7DbxIfDo9HWHYdotcT4GX() -> Bool {
 
         let paths = [
             "/usr/sbin/frida-server"
@@ -54,7 +54,7 @@ internal class ReverseEngineeringToolsChecker {
         return false
     }
 
-    private static func checkOpenedPorts() -> Bool {
+    private static func MCUutOS8F3r93Gz3JgLSpKewYEwJVfCD() -> Bool {
 
         let ports = [
             27042, // default Frida
@@ -63,7 +63,7 @@ internal class ReverseEngineeringToolsChecker {
 
         for port in ports {
 
-            if canOpenLocalConnection(port: port) {
+            if xj47AYnQcNRnYf3qCAIoEwlLopEY98tw(port: port) {
                 return true
             }
         }
@@ -71,7 +71,7 @@ internal class ReverseEngineeringToolsChecker {
         return false
     }
 
-    private static func canOpenLocalConnection(port: Int) -> Bool {
+    private static func xj47AYnQcNRnYf3qCAIoEwlLopEY98tw(port: Int) -> Bool {
 
         func swapBytesIfNeeded(port: in_port_t) -> in_port_t {
             let littleEndian = Int(OSHostByteOrder()) == OSLittleEndian
@@ -102,7 +102,7 @@ internal class ReverseEngineeringToolsChecker {
     }
     
     // EXPERIMENTAL
-    private static func checkPSelectFlag() -> Bool {
+    private static func y3jbEWplf4MxR1oOGOsS6jW7qD9HOr8k() -> Bool {
         var kinfo = kinfo_proc()
         var mib: [Int32] = [CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()]
         var size = MemoryLayout<kinfo_proc>.stride

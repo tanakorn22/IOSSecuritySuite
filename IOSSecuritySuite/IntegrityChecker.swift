@@ -11,60 +11,60 @@ import Foundation
 import MachO
 import CommonCrypto
 
-protocol Explainable {
-    var description: String { get }
+protocol wdeGY67Kj6spdM1ZLmwzewzNmUor025g {
+    var PjJTTAu9l0PHKxqyer571ThdJmIRw9w5: String { get }
 }
 
-public enum FileIntegrityCheck {
+public enum aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST {
     // Compare current bundleID with a specified bundleID.
-    case bundleID(String)
+    case ZguFsHQVIkiLwpTSU6m1J7vGfql4WmyV(String)
     
     // Compare current hash value(SHA256 hex string) of `embedded.mobileprovision` with a specified hash value.
     // Use command `"shasum -a 256 /path/to/embedded.mobileprovision"` to get SHA256 value on your macOS.
-    case mobileProvision(String)
+    case EBPMl8uX0E0vPAdTWOiJ4GrVVK9U1tt5(String)
     
     // Compare current hash value(SHA256 hex string) of executable file with a specified (Image Name, Hash Value).
     // Only work on dynamic library and arm64.
-    case machO(String, String)
+    case OV4osg9RhdA9QqTsWzWpIynG9090kVbI(String, String)
 }
 
-extension FileIntegrityCheck: Explainable {
-    public var description: String {
+extension aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST: wdeGY67Kj6spdM1ZLmwzewzNmUor025g {
+    public var PjJTTAu9l0PHKxqyer571ThdJmIRw9w5: String {
         switch self {
-        case .bundleID(let exceptedBundleID):
+        case .ZguFsHQVIkiLwpTSU6m1J7vGfql4WmyV(let exceptedBundleID):
             return "The expected bundle identify was \(exceptedBundleID)"
-        case .mobileProvision(let expectedSha256Value):
+        case .EBPMl8uX0E0vPAdTWOiJ4GrVVK9U1tt5(let expectedSha256Value):
             return "The expected hash value of Mobile Provision file was \(expectedSha256Value)"
-        case .machO(let imageName, let expectedSha256Value):
+        case .OV4osg9RhdA9QqTsWzWpIynG9090kVbI(let imageName, let expectedSha256Value):
             return "The expected hash value of \"__TEXT.__text\" data of \(imageName) Mach-O file was \(expectedSha256Value)"
         }
     }
 }
 
-public typealias FileIntegrityCheckResult = (result: Bool, hitChecks: [FileIntegrityCheck])
+public typealias FileIntegrityCheckResult = (result: Bool, hitChecks: [aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST])
 
-internal class IntegrityChecker {
+internal class SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5 {
     
     // Check if the application has been tampered with the specified checks
-    static func amITampered(_ checks: [FileIntegrityCheck]) -> FileIntegrityCheckResult {
+    static func M2OBdlk4fK1i91SiAtLLcwvvzGM4ZX2X(_ checks: [aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST]) -> FileIntegrityCheckResult {
         
-        var hitChecks: [FileIntegrityCheck] = []
+        var hitChecks: [aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST] = []
         var result = false
         
         for check in checks {
             switch check {
-            case .bundleID(let exceptedBundleID):
-                if checkBundleID(exceptedBundleID) {
+            case .ZguFsHQVIkiLwpTSU6m1J7vGfql4WmyV(let exceptedBundleID):
+                if plxybUaZyERjKAUI0cxCLpx7JJEwskp1(exceptedBundleID) {
                     result = true
                     hitChecks.append(check)
                 }
-            case .mobileProvision(let expectedSha256Value):
-                if checkMobileProvision(expectedSha256Value.lowercased()) {
+            case .EBPMl8uX0E0vPAdTWOiJ4GrVVK9U1tt5(let expectedSha256Value):
+                if ZWbVrbOg5wwgkVwBo52k2Pmc08rgEumh(expectedSha256Value.lowercased()) {
                     result = true
                     hitChecks.append(check)
                 }
-            case .machO(let imageName, let expectedSha256Value):
-                if checkMachO(imageName, with: expectedSha256Value.lowercased()) {
+            case .OV4osg9RhdA9QqTsWzWpIynG9090kVbI(let imageName, let expectedSha256Value):
+                if TDNg3h9GDeWySiKM8leMc1pt0oIYGPmH(imageName, with: expectedSha256Value.lowercased()) {
                     result = true
                     hitChecks.append(check)
                 }
@@ -74,7 +74,7 @@ internal class IntegrityChecker {
         return (result, hitChecks)
     }
     
-    private static func checkBundleID(_ expectedBundleID: String) -> Bool {
+    private static func plxybUaZyERjKAUI0cxCLpx7JJEwskp1(_ expectedBundleID: String) -> Bool {
         if expectedBundleID != Bundle.main.bundleIdentifier {
             return true
         }
@@ -82,7 +82,7 @@ internal class IntegrityChecker {
         return false
     }
     
-    private static func checkMobileProvision(_ expectedSha256Value: String) -> Bool {
+    private static func ZWbVrbOg5wwgkVwBo52k2Pmc08rgEumh(_ expectedSha256Value: String) -> Bool {
         
         guard let path = Bundle.main.path(forResource: "embedded", ofType: "mobileprovision") else { return false }
 
@@ -97,7 +97,7 @@ internal class IntegrityChecker {
                     _ = CC_SHA256($0.baseAddress, CC_LONG(data.count), &hash)
                 }
                 
-                if Data(hash).hexEncodedString() != expectedSha256Value {
+                if Data(hash).p1NgDFtY6J8FX1YyTD0IpPaiXHVd7Ksw() != expectedSha256Value {
                     return true
                 }
             }
@@ -106,7 +106,7 @@ internal class IntegrityChecker {
         return false
     }
     
-    private static func checkMachO(_ imageName: String, with expectedSha256Value: String) -> Bool {
+    private static func TDNg3h9GDeWySiKM8leMc1pt0oIYGPmH(_ imageName: String, with expectedSha256Value: String) -> Bool {
 #if arch(arm64)
         if let hashValue = getMachOFileHashValue(.custom(imageName)), hashValue != expectedSha256Value {
             return true
@@ -322,7 +322,7 @@ private class MachOParse {
 #endif
 
 extension Data {
-    fileprivate func hexEncodedString() -> String {
+    fileprivate func p1NgDFtY6J8FX1YyTD0IpPaiXHVd7Ksw() -> String {
         return map { String(format: "%02hhx", $0) }.joined()
     }
 }

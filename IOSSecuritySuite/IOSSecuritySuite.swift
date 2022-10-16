@@ -11,7 +11,7 @@ import Foundation
 import MachO
 
 @available(iOSApplicationExtension, unavailable)
-public class IOSSecuritySuite {
+public class EZYKsgUMbWAhd4RGZnT48ZQlwdhT1Nby {
 
     /**
      This type method is used to determine the true/false jailbreak status
@@ -21,8 +21,8 @@ public class IOSSecuritySuite {
      let isDeviceJailbroken: Bool = IOSSecuritySuite.amIJailbroken()
      ```
      */
-    public static func amIJailbroken() -> Bool {
-        return JailbreakChecker.amIJailbroken()
+    public static func bqN0v8TToc6rPgDSsrERExHnF2Ejy5nN() -> Bool {
+        return MzL0sbBM5Z91CMMXfdhuyHGWvNtLQSAj.bqN0v8TToc6rPgDSsrERExHnF2Ejy5nN()
     }
 
     /**
@@ -42,8 +42,8 @@ public class IOSSecuritySuite {
      - Returns: Tuple with with the jailbreak status *Bool* labeled *jailbroken* and *String* labeled *failMessage*
      to determine check that failed
      */
-    public static func amIJailbrokenWithFailMessage() -> (jailbroken: Bool, failMessage: String) {
-        return JailbreakChecker.amIJailbrokenWithFailMessage()
+    public static func MRWVO4bUkk1ce88PxUZnKBZ2XFsw2L0P() -> (jailbroken: Bool, failMessage: String) {
+        return MzL0sbBM5Z91CMMXfdhuyHGWvNtLQSAj.MRWVO4bUkk1ce88PxUZnKBZ2XFsw2L0P()
     }
 
     /**
@@ -61,8 +61,8 @@ public class IOSSecuritySuite {
      - Returns: Tuple with with the jailbreak status *Bool* labeled *jailbroken* and *[FailedCheck]* labeled *failedChecks*
      for the list of failed checks
      */
-    public static func amIJailbrokenWithFailedChecks() -> (jailbroken: Bool, failedChecks: [FailedCheck]) {
-        return JailbreakChecker.amIJailbrokenWithFailedChecks()
+    public static func K937GVF2Rqjcy9XdcFFVqY4k6GHANOzv() -> (jailbroken: Bool, failedChecks: [FailedCheck]) {
+        return MzL0sbBM5Z91CMMXfdhuyHGWvNtLQSAj.K937GVF2Rqjcy9XdcFFVqY4k6GHANOzv()
     }
 
     /**
@@ -73,8 +73,8 @@ public class IOSSecuritySuite {
      let runInEmulator: Bool = IOSSecuritySuite.amIRunInEmulator()
      ```
      */
-    public static func amIRunInEmulator() -> Bool {
-        return EmulatorChecker.amIRunInEmulator()
+    public static func kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8() -> Bool {
+        return H6BplQl6Px9F84QXr5aMC214RPdHxMMs.kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8()
     }
 
     /**
@@ -85,8 +85,8 @@ public class IOSSecuritySuite {
      let amIDebugged: Bool = IOSSecuritySuite.amIDebugged()
      ```
      */
-    public static func amIDebugged() -> Bool {
-        return DebuggerChecker.amIDebugged()
+    public static func L5bY39vYL8YDoseVXfJwNSfZP0ALz9p9() -> Bool {
+        return qUr1OrxYGKfoHa2913xG6onWJhItRxZp.L5bY39vYL8YDoseVXfJwNSfZP0ALz9p9()
     }
 
     /**
@@ -97,8 +97,8 @@ public class IOSSecuritySuite {
      IOSSecuritySuite.denyDebugger()
      ```
      */
-    public static func denyDebugger() {
-        return DebuggerChecker.denyDebugger()
+    public static func qB8ttQtAnyFjeW2M3mBmimbHXTeAvSRt() {
+        return qUr1OrxYGKfoHa2913xG6onWJhItRxZp.qB8ttQtAnyFjeW2M3mBmimbHXTeAvSRt()
     }
     
     /**
@@ -117,8 +117,8 @@ public class IOSSecuritySuite {
     - Parameter checks: The file Integrity checks you want
     - Returns: The file Integrity checker result
     */
-    public static func amITampered(_ checks: [FileIntegrityCheck]) -> FileIntegrityCheckResult {
-        return IntegrityChecker.amITampered(checks)
+    public static func M2OBdlk4fK1i91SiAtLLcwvvzGM4ZX2X(_ checks: [aD2ZRb41ozUdKGEY3JgKrN2UJd2YzRST]) -> FileIntegrityCheckResult {
+        return SfHJPHD37oLk5cOSPLqV0GIHzIy0FYq5.M2OBdlk4fK1i91SiAtLLcwvvzGM4ZX2X(checks)
     }
 
     /**
@@ -129,8 +129,8 @@ public class IOSSecuritySuite {
      let amIReverseEngineered: Bool = IOSSecuritySuite.amIReverseEngineered()
      ```
      */
-    public static func amIReverseEngineered() -> Bool {
-        return ReverseEngineeringToolsChecker.amIReverseEngineered()
+    public static func HgFCc06ANygRYR1PvaXKsk3tEnLVElbn() -> Bool {
+        return UeAhMwny7omNwI4VpcJgTqHK1URYge4M.HgFCc06ANygRYR1PvaXKsk3tEnLVElbn()
     }
     
     /**
@@ -148,8 +148,8 @@ public class IOSSecuritySuite {
     let amIRuntimeHook: Bool = amIRuntimeHook(dyldWhiteList: dylds, detectionClass: SomeClass.self, selector: #selector(SomeClass.someFunction), isClassMethod: false)
     ```
      */
-    public static func amIRuntimeHooked(dyldWhiteList: [String], detectionClass: AnyClass, selector: Selector, isClassMethod: Bool) -> Bool {
-        return RuntimeHookChecker.amIRuntimeHook(dyldWhiteList: dyldWhiteList, detectionClass: detectionClass, selector: selector, isClassMethod: isClassMethod)
+    public static func ZjjEdGihhVQguxQrvzTJaVlK90iGiooR(dyldWhiteList: [String], detectionClass: AnyClass, selector: Selector, isClassMethod: Bool) -> Bool {
+        return kMp2HGuHpg24JU1laRQnmPU2MVFi8Us5.rW4zRjzz8geDCTnptGFr97Xpb6tDWe1m(dyldWhiteList: dyldWhiteList, detectionClass: detectionClass, selector: selector, isClassMethod: isClassMethod)
     }
     
     /**
@@ -160,8 +160,8 @@ public class IOSSecuritySuite {
     let amIProxied: Bool = IOSSecuritySuite.amIProxied()
     ```
      */
-    public static func amIProxied() -> Bool {
-        return ProxyChecker.amIProxied()
+    public static func JyRTmtCrfic2RSw75656p5A6t48Gfm2j() -> Bool {
+        return EC1tAVkmzrJGMky5f2rnfkk3iGIrmoPk.JyRTmtCrfic2RSw75656p5A6t48Gfm2j()
     }
 }
 

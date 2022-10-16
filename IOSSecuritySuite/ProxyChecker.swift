@@ -8,9 +8,9 @@
 
 import Foundation
 
-internal class ProxyChecker {
+internal class EC1tAVkmzrJGMky5f2rnfkk3iGIrmoPk {
     
-    static func amIProxied() -> Bool {
+    static func JyRTmtCrfic2RSw75656p5A6t48Gfm2j() -> Bool {
         
         guard let unmanagedSettings = CFNetworkCopySystemProxySettings() else {
             return false

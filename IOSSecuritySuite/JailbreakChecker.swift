@@ -12,68 +12,68 @@ import UIKit
 import Darwin // fork
 import MachO // dyld
 
-public typealias FailedCheck = (check: JailbreakCheck, failMessage: String)
+public typealias FailedCheck = (check: w3oQnLBfdulnIkE7WoSLLAN8c5LWeJF0, failMessage: String)
 
-public enum JailbreakCheck: CaseIterable {
-    case urlSchemes
-    case existenceOfSuspiciousFiles
-    case suspiciousFilesCanBeOpened
-    case restrictedDirectoriesWriteable
-    case fork
-    case symbolicLinks
-    case dyld
+public enum w3oQnLBfdulnIkE7WoSLLAN8c5LWeJF0: CaseIterable {
+    case YWMruGvoZlHWaPYNEZaHruwfEjfUIqOj
+    case apMfvrvcnx2p5PRR80uhhWjsonj49eGJ
+    case OrG9wB2fvWKZMERmG9QrJ3NeHxRcvWYh
+    case Ul5ianXsE7Hn2Hw8n1bqx9vwz05rzoTB
+    case AxHzr1lPQWqdJGZc18UHGgePK6hONHf9
+    case obZO2lGEcmqc6YParfTFIlR5I5yDtnOZ
+    case usYXhyWmThAdfsHtHTMQLaL5M2VeNaHN
 }
 
-internal class JailbreakChecker {
+internal class MzL0sbBM5Z91CMMXfdhuyHGWvNtLQSAj {
     typealias CheckResult = (passed: Bool, failMessage: String)
 
-    struct JailbreakStatus {
-        let passed: Bool
-        let failMessage: String // Added for backwards compatibility
-        let failedChecks: [FailedCheck]
+    struct xyAnuVi8iu2SFVJzR4AESo57QBPCHbAT {
+        let STpqb4NhI0QRAIMjlUx42DLwiderAIWI: Bool
+        let vIGEurhaXoc2rRnnxT5v2FQmgSjGyiAP: String // Added for backwards compatibility
+        let zFFnoVG6EgGghNSZJTj2apZ6SbjWsbfP: [FailedCheck]
     }
 
-    static func amIJailbroken() -> Bool {
-        return !performChecks().passed
+    static func bqN0v8TToc6rPgDSsrERExHnF2Ejy5nN() -> Bool {
+        return !mwpyQSW7uVNDjJcpAvuiKr1OnhFAzzaf().STpqb4NhI0QRAIMjlUx42DLwiderAIWI
     }
 
-    static func amIJailbrokenWithFailMessage() -> (jailbroken: Bool, failMessage: String) {
-        let status = performChecks()
-        return (!status.passed, status.failMessage)
+    static func MRWVO4bUkk1ce88PxUZnKBZ2XFsw2L0P() -> (jailbroken: Bool, failMessage: String) {
+        let status = mwpyQSW7uVNDjJcpAvuiKr1OnhFAzzaf()
+        return (!status.STpqb4NhI0QRAIMjlUx42DLwiderAIWI, status.vIGEurhaXoc2rRnnxT5v2FQmgSjGyiAP)
     }
 
-    static func amIJailbrokenWithFailedChecks() -> (jailbroken: Bool, failedChecks: [FailedCheck]) {
-        let status = performChecks()
-        return (!status.passed, status.failedChecks)
+    static func K937GVF2Rqjcy9XdcFFVqY4k6GHANOzv() -> (jailbroken: Bool, failedChecks: [FailedCheck]) {
+        let status = mwpyQSW7uVNDjJcpAvuiKr1OnhFAzzaf()
+        return (!status.STpqb4NhI0QRAIMjlUx42DLwiderAIWI, status.zFFnoVG6EgGghNSZJTj2apZ6SbjWsbfP)
     }
 
-    private static func performChecks() -> JailbreakStatus {
+    private static func mwpyQSW7uVNDjJcpAvuiKr1OnhFAzzaf() -> xyAnuVi8iu2SFVJzR4AESo57QBPCHbAT {
         var passed = true
         var failMessage = ""
         var result: CheckResult = (true, "")
         var failedChecks: [FailedCheck] = []
 
-        for check in JailbreakCheck.allCases {
+        for check in w3oQnLBfdulnIkE7WoSLLAN8c5LWeJF0.allCases {
             switch check {
-            case .urlSchemes:
-                result = checkURLSchemes()
-            case .existenceOfSuspiciousFiles:
-                result = checkExistenceOfSuspiciousFiles()
-            case .suspiciousFilesCanBeOpened:
-                result = checkSuspiciousFilesCanBeOpened()
-            case .restrictedDirectoriesWriteable:
-                result = checkRestrictedDirectoriesWriteable()
-            case .fork:
-                if !EmulatorChecker.amIRunInEmulator() {
-                    result = checkFork()
+            case .YWMruGvoZlHWaPYNEZaHruwfEjfUIqOj:
+                result = yzXDR0BUYcpYTpwyEmUeqMGHLtjnIXlb()
+            case .apMfvrvcnx2p5PRR80uhhWjsonj49eGJ:
+                result = XkbSIPRH86i7DbxIfDo9HWHYdotcT4GX()
+            case .OrG9wB2fvWKZMERmG9QrJ3NeHxRcvWYh:
+                result = ZSULnJpiMIhsTwPqX8fdyGsxbdxOaV49()
+            case .Ul5ianXsE7Hn2Hw8n1bqx9vwz05rzoTB:
+                result = SJrVxoGeLdEZW7ReDuLLubWM9aGoGSJB()
+            case .AxHzr1lPQWqdJGZc18UHGgePK6hONHf9:
+                if !H6BplQl6Px9F84QXr5aMC214RPdHxMMs.kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8() {
+                    result = ve4sbxcUwD7CyaP8VWhYmajJuaf5OF02()
                 } else {
                     print("App run in the emulator, skipping the fork check.")
                     result = (true, "")
                 }
-            case .symbolicLinks:
-                result = checkSymbolicLinks()
-            case .dyld:
-                result = checkDYLD()
+            case .obZO2lGEcmqc6YParfTFIlR5I5yDtnOZ:
+                result = FLXtBAf69k1Oz0a8kWeTTdbAI7XxesA4()
+            case .usYXhyWmThAdfsHtHTMQLaL5M2VeNaHN:
+                result = OThGT3qQBZFjsCltEl46n2h2EpjcD8cy()
             }
 
             passed = passed && result.passed
@@ -89,10 +89,10 @@ internal class JailbreakChecker {
             failMessage += result.failMessage
         }
 
-        return JailbreakStatus(passed: passed, failMessage: failMessage, failedChecks: failedChecks)
+        return xyAnuVi8iu2SFVJzR4AESo57QBPCHbAT(STpqb4NhI0QRAIMjlUx42DLwiderAIWI: passed, vIGEurhaXoc2rRnnxT5v2FQmgSjGyiAP: failMessage, zFFnoVG6EgGghNSZJTj2apZ6SbjWsbfP: failedChecks)
     }
 
-    private static func canOpenUrlFromList(urlSchemes: [String]) -> CheckResult {
+    private static func E31B5wESkqmoBUXddGO8TGMflvZgYYFB(urlSchemes: [String]) -> CheckResult {
         for urlScheme in urlSchemes {
             if let url = URL(string: urlScheme) {
                 if UIApplication.shared.canOpenURL(url) {
@@ -105,7 +105,7 @@ internal class JailbreakChecker {
 
     // "cydia://" URL scheme has been removed. Turns out there is app in the official App Store
     // that has the cydia:// URL scheme registered, so it may cause false positive
-    private static func checkURLSchemes() -> CheckResult {
+    private static func yzXDR0BUYcpYTpwyEmUeqMGHLtjnIXlb() -> CheckResult {
         var flag: (passed: Bool, failMessage: String) = (true, "")
         let urlSchemes = [
             "undecimus://",
@@ -116,11 +116,11 @@ internal class JailbreakChecker {
         ]
 
         if Thread.isMainThread {
-            flag = canOpenUrlFromList(urlSchemes: urlSchemes)
+            flag = E31B5wESkqmoBUXddGO8TGMflvZgYYFB(urlSchemes: urlSchemes)
         } else {
             let semaphore = DispatchSemaphore(value: 0)
             DispatchQueue.main.async {
-                flag = canOpenUrlFromList(urlSchemes: urlSchemes)
+                flag = E31B5wESkqmoBUXddGO8TGMflvZgYYFB(urlSchemes: urlSchemes)
                 semaphore.signal()
             }
             semaphore.wait()
@@ -128,7 +128,7 @@ internal class JailbreakChecker {
         return flag
     }
 
-    private static func checkExistenceOfSuspiciousFiles() -> CheckResult {
+    private static func XkbSIPRH86i7DbxIfDo9HWHYdotcT4GX() -> CheckResult {
         var paths = [
             "/var/mobile/Library/Preferences/ABPattern", // A-Bypass
             "/usr/lib/ABDYLD.dylib", // A-Bypass,
@@ -192,7 +192,7 @@ internal class JailbreakChecker {
         ]
         
         // These files can give false positive in the emulator
-        if !EmulatorChecker.amIRunInEmulator() {
+        if !H6BplQl6Px9F84QXr5aMC214RPdHxMMs.kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8() {
             paths += [
             "/bin/bash",
             "/usr/sbin/sshd",
@@ -213,7 +213,7 @@ internal class JailbreakChecker {
         return (true, "")
     }
 
-    private static func checkSuspiciousFilesCanBeOpened() -> CheckResult {
+    private static func ZSULnJpiMIhsTwPqX8fdyGsxbdxOaV49() -> CheckResult {
 
         var paths = [
             "/.installed_unc0ver",
@@ -225,7 +225,7 @@ internal class JailbreakChecker {
         ]
         
         // These files can give false positive in the emulator
-        if !EmulatorChecker.amIRunInEmulator() {
+        if !H6BplQl6Px9F84QXr5aMC214RPdHxMMs.kE1TyGfGKKReS0ssbxxc7NfSVTXj2dS8() {
             paths += [
             "/bin/bash",
             "/usr/sbin/sshd",
@@ -243,7 +243,7 @@ internal class JailbreakChecker {
         return (true, "")
     }
 
-    private static func checkRestrictedDirectoriesWriteable() -> CheckResult {
+    private static func SJrVxoGeLdEZW7ReDuLLubWM9aGoGSJB() -> CheckResult {
 
         let paths = [
             "/",
@@ -266,7 +266,7 @@ internal class JailbreakChecker {
         return (true, "")
     }
 
-    private static func checkFork() -> CheckResult {
+    private static func ve4sbxcUwD7CyaP8VWhYmajJuaf5OF02() -> CheckResult {
 
         let pointerToFork = UnsafeMutableRawPointer(bitPattern: -2)
         let forkPtr = dlsym(pointerToFork, "fork")
@@ -284,7 +284,7 @@ internal class JailbreakChecker {
         return (true, "")
     }
 
-    private static func checkSymbolicLinks() -> CheckResult {
+    private static func FLXtBAf69k1Oz0a8kWeTTdbAI7XxesA4() -> CheckResult {
 
         let paths = [
             "/var/lib/undecimus/apt", // unc0ver
@@ -309,7 +309,7 @@ internal class JailbreakChecker {
         return (true, "")
     }
 
-    private static func checkDYLD() -> CheckResult {
+    private static func OThGT3qQBZFjsCltEl46n2h2EpjcD8cy() -> CheckResult {
 
         let suspiciousLibraries = [
             "SubstrateLoader.dylib",
