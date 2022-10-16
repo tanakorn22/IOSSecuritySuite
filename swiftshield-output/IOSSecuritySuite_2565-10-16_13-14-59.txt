@@ -3,7 +3,7 @@
 // IOSSecuritySuite
 // Deobfuscate crash logs (or any text file) by running:
 // swiftshield deobfuscate
-//
+// xx
 
 DebuggerChecker ===> qUr1OrxYGKfoHa2913xG6onWJhItRxZp
 EmulatorChecker ===> H6BplQl6Px9F84QXr5aMC214RPdHxMMs
