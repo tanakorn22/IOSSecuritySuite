@@ -1,0 +1,8 @@
+Fork from iosSecuritySuite to tanakorn22/iosSecuritySuite
+
+1. เพื่อเอามา obfuscate code ด้วย SwiftShield 
+2. แล้วทำการ push ไปที่ tanakorn22 git
+
+3. แล้วใช้ Carthage build to xcFramework 
+
+4. เพื่อนำ .xcframework มาใช้ใน flutter-iosSecuritySuite plugin บน git 
